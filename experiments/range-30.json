@@ -1,0 +1,38 @@
+{
+  "description": "Experiment for the TSP-D when the drone has a limited battery of 30 units; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1-range-30",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "range": 30
+    },
+    {
+      "name": "pfc-5-speed-2-range-30",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "range": 30
+    },
+    {
+      "name": "pfc-5-speed-3-range-30",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "range": 30
+    },
+    {
+      "name": "pfc-5-speed-3-rr-range-30",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "range": 30
+    }    
+  ]
+}

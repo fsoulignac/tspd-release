@@ -1,0 +1,23 @@
+{
+  "description": "Experiment to test the labeling algorithm alone.",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "bi",
+      "executable": "tspd_lbl",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "bidirectional": true
+    },
+    {
+      "name": "mono",
+      "executable": "tspd_lbl",
+      "init_ng": 10,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "bidirectional": false
+    }
+
+  ]
+}

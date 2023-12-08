@@ -1,0 +1,54 @@
+{
+  "description": "Experiment for the TSP-D with the same configuration as Murray and Chu, Ha et al., and Dell'Amico et al.; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1-mhd",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "land_and_wait": false,
+      "range": 20,
+      "compatible": 1,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-2-mhd",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "land_and_wait": false,
+      "range": 20,
+      "compatible": 1,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-3-mhd",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "land_and_wait": false,
+      "range": 20,
+      "compatible": 1,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-3-rr-mhd",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "land_and_wait": false,
+      "range": 20,
+      "compatible": 1,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    }
+  ]
+}

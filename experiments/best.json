@@ -1,0 +1,27 @@
+{
+  "description": "Experiment with the best configuration  (pfc, ng=5) found for the basic TSP-D",
+  "datasets": [{"name": "poi"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1
+    },
+    {
+      "name": "pfc-5-speed-2",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2
+    },
+    {
+      "name": "pfc-5-speed-3",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3
+    }
+  ]
+}

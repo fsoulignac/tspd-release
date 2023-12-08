@@ -1,0 +1,38 @@
+{
+  "description": "Experiment for the TSP-D when loops are allowed; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-loop-1",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-loop-2",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-loop-3",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-loop-3-rr",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "loops": true
+    }
+  ]
+}

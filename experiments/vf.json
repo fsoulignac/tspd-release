@@ -1,0 +1,31 @@
+{
+  "description": "Experiment for the variable fixing stage",
+  "datasets": [{"name": "poi"}],
+  "experiments": [
+    {
+      "name": "var-fix-speed-1",
+      "executable": "tspd_vf",
+      "init_ng": 5,
+      "time_limit_factor": 20,
+      "gaps": [1.5, 3, 6],
+      "drone_speed": 1
+    },
+    {
+      "name": "var-fix-speed-2",
+      "executable": "tspd_vf",
+      "init_ng": 5,
+      "time_limit_factor": 20,
+      "gaps": [1.5, 3, 6],
+      "drone_speed": 2
+    },
+    {
+      "name": "var-fix-speed-3",
+      "executable": "tspd_vf",
+      "init_ng": 5,
+      "time_limit_factor": 20,
+      "gaps": [1.5, 3, 6],
+      "drone_speed": 3
+    }
+
+  ]
+}

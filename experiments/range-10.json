@@ -1,0 +1,65 @@
+{
+  "description": "Experiment for the TSP-D when the drone has a limited battery of 10 units; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1-range-10",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "range": 10
+    },
+    {
+      "name": "pfc-5-speed-2-range-10",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "range": 10
+    },
+    {
+      "name": "pfc-5-speed-3-range-10",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "range": 10
+    },
+    {
+      "name": "pfc-5-speed-3-rr-range-10",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "range": 10
+    },
+    {
+      "name": "bp-5-speed-1-range-10",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "range": 100000,
+      "bidirectional": false
+    },
+    {
+      "name": "bp-5-speed-2-range-10",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "range": 10,
+      "bidirectional": false
+    },
+        {
+      "name": "bp-5-speed-3-rr-range-10",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "range": 10,
+      "bidirectional": false
+    }    
+  ]
+}

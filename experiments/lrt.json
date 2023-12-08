@@ -1,0 +1,52 @@
+{
+  "description": "Experiment for the TSP-D when the drone requires some time for its launch and rendezvous; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1-lrt",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-2-lrt",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-3-lrt",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "pfc-5-speed-3-rr-lrt",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "launch_time": 1,
+      "rendezvous_time": 1
+    },
+    {
+      "name": "bp-5-speed-3-rr-lrt",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "launch_time": 1,
+      "rendezvous_time": 1,
+      "cg_algorithm": 1
+    }    
+  ]
+}

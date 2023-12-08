@@ -1,0 +1,30 @@
+{
+  "description": "Experiment for the column generation algorithm on the root node for more than 39 customers",
+  "datasets": [{"name": "poi", "select": "N50 | N60 | N70 | N80 | N90 | N100"}],
+  "experiments": [
+    {
+      "name": "colgen-5-speed-1",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "only_root": true,
+      "drone_speed": 1
+    },
+    {
+      "name": "colgen-5-speed-2",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "only_root": true,
+      "drone_speed": 2
+    },
+    {
+      "name": "colgen-5-speed-3",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "only_root": true,
+      "drone_speed": 3
+    }
+  ]
+}

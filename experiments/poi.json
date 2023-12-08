@@ -1,0 +1,46 @@
+{
+  "description": "Experiment for the TSP-D with the same configuration as Poikonen et al; at most 39 customers",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "pfc-5-speed-1-poi",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "land_and_wait": false,
+      "range": 20,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-speed-2-poi",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "land_and_wait": false,
+      "range": 20,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-speed-3-poi",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "land_and_wait": false,
+      "range": 20,
+      "loops": true
+    },
+    {
+      "name": "pfc-5-speed-3-rr-poi",
+      "executable": "tspd_pfc",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "land_and_wait": false,
+      "range": 20,
+      "loops": true
+    }
+  ]
+}

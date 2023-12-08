@@ -1,0 +1,66 @@
+{
+  "description": "Experiment for the branch and price configuration for the basic TSP-D.  At most 39 customers.",
+  "datasets": [{"name": "poi", "select": "N10 | N20 | N30 | N40"}],
+  "experiments": [
+    {
+      "name": "bp-5-speed-1",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1
+    },
+    {
+      "name": "bp-5-speed-2",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2
+    },
+    {
+      "name": "bp-5-speed-3",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3
+    },
+    {
+      "name": "bp-5-speed-3-rr",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003
+    },
+    {
+      "name": "bp+5-speed-1",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 1,
+      "cg_algorithm": 1
+    },
+    {
+      "name": "bp+5-speed-2",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 2,
+      "cg_algorithm": 1
+    },
+    {
+      "name": "bp+5-speed-3",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3,
+      "cg_algorithm": 1
+    },
+    {
+      "name": "bp+5-speed-3-rr",
+      "executable": "tspd_bp",
+      "init_ng": 5,
+      "time_limit": 3600,
+      "drone_speed": 3.003003003,
+      "cg_algorithm": 1
+    }
+  ]
+}
